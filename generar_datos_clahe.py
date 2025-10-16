@@ -5,7 +5,6 @@ import json
 import pandas as pd
 from pathlib import Path
 from scipy.stats import entropy
-from skimage import filters
 
 def calcular_entropia(imagen):
     """Calcula la entropía de Shannon de la imagen."""
