@@ -1,6 +1,6 @@
 # Optimización CLAHE en Python con Trazabilidad Estructurada
 
-## 📋 Descripción General
+## Descripción General
 
 Sistema automatizado de experimentación con el algoritmo **CLAHE** (Contrast Limited Adaptive Histogram Equalization) que registra cada resultado en una estructura de directorios organizada, facilitando la evaluación posterior de la delimitación de estructuras en imágenes médicas o científicas.
 
@@ -8,7 +8,7 @@ El sistema implementa un enfoque de dos fases que separa la **generación de dat
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Automatizar la búsqueda de parámetros óptimos para CLAHE mediante:
 - Experimentación exhaustiva de combinaciones de parámetros
@@ -18,7 +18,7 @@ Automatizar la búsqueda de parámetros óptimos para CLAHE mediante:
 
 ---
 
-## 🛠️ Requisitos e Instalación
+## Requisitos e Instalación
 
 ### Dependencias
 
@@ -36,7 +36,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 proyecto_clahe/
@@ -64,7 +64,7 @@ proyecto_clahe/
 
 ---
 
-## 🔧 Parámetros de Configuración
+## Parámetros de Configuración
 
 ### Parámetros de Entrada
 
@@ -84,7 +84,7 @@ proyecto_clahe/
 
 ---
 
-## 🚀 Uso del Sistema
+## Uso del Sistema
 
 ### Fase 1: Generación y Almacenamiento de Datos
 
@@ -98,15 +98,15 @@ python 1_generar_datos_clahe.py
 
 #### Funcionalidades:
 
-- ✅ **Carga automática** de todas las imágenes en `./data/`
-- ✅ **Bucle anidado** sobre todas las combinaciones de (α, ω)
-- ✅ **Aplicación de CLAHE** con cada configuración
-- ✅ **Cálculo de 4 métricas** de calidad por iteración
-- ✅ **Almacenamiento estructurado**:
+- **Carga automática** de todas las imágenes en `./data/`
+- **Bucle anidado** sobre todas las combinaciones de (α, ω)
+- **Aplicación de CLAHE** con cada configuración
+- **Cálculo de 4 métricas** de calidad por iteración
+- **Almacenamiento estructurado**:
   - Imagen modificada en carpeta individual
   - Parámetros y métricas en JSON
   - Registro en tabla maestra CSV
-- ✅ **Progreso en tiempo real** con estadísticas
+- **Progreso en tiempo real** con estadísticas
 
 #### Salida:
 ```
@@ -142,16 +142,16 @@ python 2_analisis_resultados.py
 
 #### Funcionalidades:
 
-- 📊 **Análisis estadístico** del CSV maestro
-- 📈 **Visualizaciones avanzadas**:
+- **Análisis estadístico** del CSV maestro
+- **Visualizaciones avanzadas**:
   - Mapas de calor (α vs ω) para cada métrica
   - Gráficos 3D de relaciones paramétricas
   - Evolución de métricas por Tile Size
   - Histogramas de distribución
-- 🏆 **Identificación de top 10 configuraciones**
-- 🖼️ **Comparación visual** lado a lado (Original vs CLAHE)
-- 📝 **Reporte detallado** con evaluación cualitativa
-- 🎯 **Determinación de parámetros óptimos** (α*, ω*)
+- **Identificación de top 10 configuraciones**
+- **Comparación visual** lado a lado (Original vs CLAHE)
+- **Reporte detallado** con evaluación cualitativa
+- **Determinación de parámetros óptimos** (α*, ω*)
 
 #### Salida:
 ```
@@ -176,7 +176,7 @@ TOP_N_EVALUACION = 5     # Top N para reporte visual detallado
 
 ---
 
-## 📊 Interpretación de Resultados
+## Interpretación de Resultados
 
 ### Tabla Maestra (`resultados_maestros.csv`)
 
@@ -215,7 +215,7 @@ Incluye:
 
 ---
 
-## 🎨 Visualizaciones Generadas
+## Visualizaciones Generadas
 
 ### 1. Mapas de Calor (Heatmaps)
 Muestran el valor de cada métrica para todas las combinaciones (α, ω):
@@ -248,7 +248,7 @@ Imagen original vs. las 5 mejores aplicaciones CLAHE lado a lado.
 
 ---
 
-## 🔍 Criterios de Selección
+## Criterios de Selección
 
 ### Métricas Prioritarias según Aplicación
 
@@ -268,7 +268,7 @@ El sistema evalúa automáticamente cada resultado comparando con percentiles:
 
 ---
 
-## ⚙️ Personalización Avanzada
+## Personalización Avanzada
 
 ### Modificar Rangos de Parámetros
 
@@ -308,7 +308,7 @@ extensiones_validas = ['.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.dcm']
 
 ---
 
-## 📖 Flujo de Trabajo Recomendado
+## Flujo de Trabajo Recomendado
 
 1. **Preparación**
    ```bash
@@ -350,7 +350,7 @@ extensiones_validas = ['.png', '.jpg', '.jpeg', '.bmp', '.tiff', '.dcm']
 
 ---
 
-## 🧪 Ejemplo de Uso Completo
+## Ejemplo de Uso Completo
 
 ```bash
 # 1. Clonar o descargar scripts
@@ -377,7 +377,7 @@ python 2_analisis_resultados.py
 
 ---
 
-## 📈 Rendimiento y Escalabilidad
+## Rendimiento y Escalabilidad
 
 | Escenario | N Imágenes | Combinaciones | Tiempo Estimado | Espacio en Disco |
 |:----------|:-----------|:--------------|:----------------|:-----------------|
@@ -390,7 +390,7 @@ python 2_analisis_resultados.py
 
 ---
 
-## 🐛 Solución de Problemas
+## Solución de Problemas
 
 ### Error: "No se encontraron imágenes"
 ```bash
@@ -415,7 +415,7 @@ python 1_generar_datos_clahe.py
 
 ---
 
-## 📚 Referencias Técnicas
+## Referencias Técnicas
 
 ### CLAHE (Contrast Limited Adaptive Histogram Equalization)
 - **Publicación original**: Zuiderveld, K. (1994). "Contrast Limited Adaptive Histogram Equalization"
@@ -429,8 +429,6 @@ python 1_generar_datos_clahe.py
 
 ---
 
-## 🤝 Contribuciones y Extensiones
-
 ### Ideas para Extensiones Futuras
 - [ ] Soporte para imágenes DICOM (`.dcm`)
 - [ ] Procesamiento paralelo con `multiprocessing`
@@ -441,4 +439,3 @@ python 1_generar_datos_clahe.py
 - [ ] Optimización Bayesiana de hiperparámetros
 
 ---
-
