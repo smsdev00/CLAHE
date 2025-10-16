@@ -1,0 +1,24 @@
+# ----------------------------------------------------------------------
+# 1. Dependencias y Entornos Virtuales
+# ----------------------------------------------------------------------
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+.env/
+
+# Directorios de paquetes
+__pycache__/
+*.pyc
+*.pyd
+*.so
+build/
+dist/
+*.egg-info/
+
+# Logs y archivos de Python
+.mypy_cache/
+.pytest_cache/
+.ipynb_checkpoints/
+pip-log.txt
