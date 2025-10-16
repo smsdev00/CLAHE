@@ -22,3 +22,7 @@ dist/
 .pytest_cache/
 .ipynb_checkpoints/
 pip-log.txt
+
+#app
+resultados_clahe/*
+data/*

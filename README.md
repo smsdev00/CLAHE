@@ -47,6 +47,8 @@ Se requiere un doble bucle (anidado) en Python para iterar sobre todas las combi
 
 ### 4. Evaluación Final (Reporte)
 
+![Reporte](resultado.jpg)
+
 En lugar de que el algoritmo determine por si solo las mejores imágenes durante la ejecución, el proceso debe **almacenar los resultados de las métricas** de todas las iteraciones en una **Tabla Maestra (CSV o DataFrame de Pandas)**.
 
 * **Tabla Maestra:** Esta tabla (`resultados_maestros.csv`) debe contener la columna `ID_Experimento`, los valores de los parámetros y todas las métricas.
