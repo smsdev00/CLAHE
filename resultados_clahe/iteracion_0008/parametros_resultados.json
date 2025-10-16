@@ -1,0 +1,12 @@
+{
+    "ID_Experimento": 8,
+    "Imagen_Original": "imagen_original.png",
+    "ClipLimit": 2.0,
+    "TileSize": 16,
+    "Metricas": {
+        "Entropia": 6.8955864906311035,
+        "Contraste_Local_Promedio": 1.941970705986023,
+        "Nitidez_Borde": 25.727860855406036,
+        "Contraste_Michelson": 15.933333333333334
+    }
+}
