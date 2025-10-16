@@ -6,7 +6,7 @@ El objetivo es automatizar la experimentación con el algoritmo **CLAHE** y regi
 
 Se requiere la instalación de librerías esenciales para procesamiento de imágenes y manejo de *arrays*:
 
-* **Librerías:** `cv2` (OpenCV) o `skimage`, `numpy`, `os`, `json` (o `io` para TXT).
+* **Librerías:** `cv2` (OpenCV) , `numpy`, `os`, `json` (o `io` para TXT).
 
 ### 2. Parámetros de Entrada
 
