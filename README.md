@@ -430,6 +430,7 @@ python 1_generar_datos_clahe.py
 ---
 
 ### Ideas para Extensiones Futuras
+
 - [ ] Soporte para imágenes DICOM (`.dcm`)
 - [ ] Procesamiento paralelo con `multiprocessing`
 - [ ] Interfaz gráfica (GUI) con PyQt o Tkinter
@@ -437,5 +438,22 @@ python 1_generar_datos_clahe.py
 - [ ] Integración con bases de datos (SQLite/PostgreSQL)
 - [ ] Soporte para video (frame por frame)
 - [ ] Optimización Bayesiana de hiperparámetros
+
+---
+
+---
+### Roadmap implementación ML
+
+- Fase 2,Desarrollo del Modelo Predictivo,"Objetivo: Implementar un modelo de ML para predecir el rendimiento (métrica de calidad) a partir de los parámetros (α,ω)."
+
+ 1. Utilizar resultados_maestros.csv como dataset de entrenamiento.
+ 2. Entrenar un modelo de Regresión (e.g., MLP o Gradient Boosting) con (α,ω) como entrada y la métrica como salida."
+
+- Fase 3,Implementación de Optimización Eficiente,Objetivo: Reemplazar el costoso Grid Search por un método de búsqueda inteligente.
+ 1. Implementar Optimización Bayesiana (BO) sobre la función de métrica real, utilizando el modelo predictivo como función de adquisición."
+ 2. Reducir drásticamente el número de iteraciones experimentales necesarias para converger al óptimo α∗ y ω∗.
+- Fase 4,Generalización y Despliegue,Objetivo: Probar el proceso optimizado en un conjunto de imágenes más amplio.
+ 1. Crear un pipeline automatizado que utilice el algoritmo BO para encontrar el óptimo por cada nueva imagen o conjunto de datos.
+ 2. Integrar la solución en un módulo de producción para el pre-procesamiento de imágenes.
 
 ---
